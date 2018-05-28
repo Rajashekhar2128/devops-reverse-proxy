@@ -1,0 +1,7 @@
+version: '2'
+services:
+    web:
+        command: httpd -DFOREGROUND
+        build: web-server/
+        ports:
+          - "8080:80"
